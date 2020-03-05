@@ -1,0 +1,137 @@
+.stema {
+  width:100%;
+}
+html * {
+  font-family:Arial;
+  list-style-type:none;
+}
+.titlu {
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.stema-text {
+  font-size:36px;
+  color:white;
+  flex-basis:142%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #673592;
+  font-family: Arial;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #673592;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  background: linear-gradient(to left, #42275a, #734b6d);
+  margin-left:10%;
+  margin-right:10%; 
+}
+
+.galerie {
+  display:grid;
+  grid-template-columns: repeat(4, 21.88vw);
+  grid-template-rows: repeat(1, 24vw);
+  justify-content:center;
+}
+
+#harta {
+  display:flex;
+  width:100%;
+}
+
+#stanga {
+  display:block;
+  color:white;
+}
+
+#stanga span { 
+  display:block;
+  float:right;
+}
+aside {
+    position: fixed;
+    right: 10px;
+    top: 100px;
+}
+
+aside button {
+    position: fixed;
+    right: 10px;
+    top: 95px;
+    z-index: 10;
+}
+
+aside ul {
+    background-color: #673592;
+    z-index: 9;   
+    font-family: inherit; 
+    color:white;
+    padding-left:20px;
+}
+
+@media screen and (max-width: 700px) {
+    aside {
+        display: none;
+    }
+	#ifr
+	{
+		width:100%;
+	}
+}

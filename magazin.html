@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+  <Title>FC Arges</Title>
+  <link rel="stylesheet" href="magazin_css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="index.html" target="_self">
+</HEAD>
+<HEADER class="titlu">
+  <figure>
+    <a href="index.html">
+     <img src = "https://upload.wikimedia.org/wikipedia/ro/thumb/6/6e/Arges_Pitesti.png/220px-Arges_Pitesti.png" class = "stema"></img>
+     </a>
+  </figure>
+  <figcaption id="tt1" class="stema-text">FOTBAL CLUB ARGES<br>
+    <font size="5">VULTURII ALB VIOLETI</font>
+    </br>
+  </figcaption>
+</HEADER>
+<body>
+  <section>
+    <nav class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Diverse
+      <i class="fa fa-caret-down"></i>
+    </button>
+        <div class="dropdown-content">
+          <a href="date.html">Colectare date</a>
+          <a href="galerie.html">Galerie</a>
+		  	  <a href="magazin.html">Magazin</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Contact
+      <i class="fa fa-caret-down"></i>
+    </button>
+        <div class="dropdown-content">
+          <a href="harta.html">Harta</a>
+          <a href="website.html">Website</a>
+        </div>
+      </div>
+            <div class="dropdown1">
+        <button id="dropbtn1">Culoare Titlu
+      <i class="fa fa-caret-down"></i>
+    </button>
+      </div>
+      <p id="rgb_ttl" class="dropdown1" ></p>
+    </nav>
+  <section>
+    <div class="galerie">
+      <figure><img src="t1.jpg" class="imagine">
+        <input type="radio" name="tricouri" id="b1">Modelul 1<br>
+      </figure>
+	  <figure><img src="t2.jpg" class="imagine">
+      <input type="radio" name="tricouri" id="b2">Modelul 2<br>
+      </figure>
+      <figure><img src="t3.jpg" class="imagine">
+       <input type="radio" name="tricouri" id="b3">Modelul 3<br>
+      </figure>
+      	  <figure><img src="t4.png" class="imagine">
+       <input type="radio" name="tricouri" id="b4">Modelul 4<br>
+      </figure>
+      </div>
+  </section>
+  <section>
+    <h2 id="cos">Cos de cumparaturi:</h2>
+            <p contenteditable="true" id="camp_input"></p>
+        <button id="add">Click to insert</button>
+        <button id="delete">Click to clear all</button>
+
+        <hr>
+        <table id="tab">
+            <tr>
+                <th>Nume produs</th>
+                <th>Data si ora</th>
+				        <th></th>
+            </tr>
+        </table>
+  </section>
+<button onclick="fctArray()" id="bbb">Click!</button>
+<p id="arr"></p>
+</body>
+<script src="magazin-js.js"></script>
+</HTML>
